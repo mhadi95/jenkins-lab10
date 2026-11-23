@@ -27,6 +27,7 @@ pipeline {
             steps {
                 echo 'Building the application'
                 sh 'npm run build'
+                sh 'sleep 40'
                 sh 'ls -l dist'
             }
         }
