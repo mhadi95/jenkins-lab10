@@ -1,5 +1,5 @@
 const fs = require('fs');
-fs.mkdirSync('dist', { recursive: true });
+fs.mkdirSyncX('dist', { recursive: true });
 const now = new Date().toISOString();
 const html = fs.readFileSync('src/index.html', 'utf8').replace('__BUILD_TIME__', now);
 fs.writeFileSync('dist/index.html', html);
